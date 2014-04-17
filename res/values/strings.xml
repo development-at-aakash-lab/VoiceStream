@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Voicestream</string>
+  
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="request">Raise Hand</string>
+	<string name="defaultPort">50005</string>
+	<string name="labelPort">Port</string>
+	<string name="labelIPaddress">IP Address</string>
+	<string name="labelDefault">Default</string>
+	<string name="defaultIP">10.105.22.26</string><string name="withdraw">Withdraw</string>
+
+</resources>

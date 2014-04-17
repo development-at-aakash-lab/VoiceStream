@@ -1,0 +1,128 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alignmentMode="alignBounds"
+    android:clickable="false"
+    android:columnCount="5"
+    android:columnOrderPreserved="false"
+    android:focusable="false"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:rowCount="6"
+    tools:context=".VideoStream" >
+
+	<TextView
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:textAppearance="?android:attr/textAppearanceMedium"
+	  android:text="@string/labelIPaddress"
+	  android:id="@+id/tvIP"
+	  android:layout_marginTop="36dp"
+	  android:layout_row="0"
+	  android:layout_column="0"
+	  android:layout_gravity="fill_horizontal"/>
+
+	<Button
+	  style="?android:attr/buttonStyleSmall"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:text="@string/labelDefault"
+	  android:onClick="onDefaultIP"
+	  android:layout_gravity="right"
+	  android:id="@+id/bDefaultIP"
+	  android:layout_row="0"
+	  android:layout_column="4"/>
+
+	<TextView
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:textAppearance="?android:attr/textAppearanceMedium"
+	  android:text="@string/labelPort"
+	  android:id="@+id/tvPort"
+	  android:layout_row="1"
+	  android:layout_column="0"
+	  android:layout_gravity="fill_horizontal|right"/>
+
+	<EditText
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:inputType="number"
+	  android:id="@+id/etPort"
+	  android:text="@string/defaultPort"
+	  android:gravity="center"
+	  android:layout_row="1"
+	  android:layout_column="1"
+	  android:layout_gravity="fill_horizontal"
+	  android:layout_columnSpan="3"/>
+
+	<Button
+	  style="?android:attr/buttonStyleSmall"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:text="@string/labelDefault"
+	  android:id="@+id/bDefaultPort"
+	  android:onClick="onDefaultPort"
+	  android:layout_gravity="right"
+	  android:layout_row="1"
+	  android:layout_column="4"/>
+
+	<ProgressBar
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:id="@+id/progressBar"
+	  android:indeterminate="false"
+	  style="@android:style/Widget.ProgressBar.Horizontal"
+	  android:layout_gravity="fill_horizontal|center_horizontal"
+	  android:layout_row="2"
+	  android:layout_column="0"
+	  android:layout_columnSpan="5"/>
+
+	<Button
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:text="@string/request"
+	  android:id="@+id/bRaiseHand"
+	  android:layout_gravity="fill_horizontal"
+	  android:layout_row="4"
+	  android:layout_columnSpan="3"
+	  android:onClick="onRequestPress"
+	  android:layout_column="0"/>
+
+	<Button
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:text="@string/withdraw"
+	  android:id="@+id/bWithdraw"
+	  android:layout_gravity="right"
+	  android:layout_row="4"
+	  android:layout_columnSpan="3"
+	  android:onClick="onWithdrawPress"
+	  android:layout_column="2"/>
+
+	<Button
+	  android:id="@+id/bRecord"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:onClick="onRecordPress"
+	  android:layout_row="5"
+	  android:layout_columnSpan="5"
+	  android:layout_column="0"
+	  android:layout_gravity="center_horizontal"/>
+
+	<EditText
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:id="@+id/etIpAddress"
+	  android:gravity="center"
+	  android:text="@string/defaultIP"
+	  android:inputType="phone"
+	  android:layout_row="0"
+	  android:layout_column="1"
+	  android:layout_gravity="fill_horizontal"
+	  android:layout_columnSpan="3"/>
+</GridLayout>
